@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+} 
+body .background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#audio1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header{
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.header  .grid{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header .grid input,
+.header .grid .btn{
+    text-align: center;
+    background-color: rgb(215, 231, 245);
+    border-radius: 15px;
+    height: 25px;
+    width: 40px;
+    border:none;
+    box-shadow: -5px 5px 10px grey;
+    font-size: 11px;
+    color: grey;
+}
+
+.header .grid .btn:hover{
+    color:rgb(250, 25, 25);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.header .grid input:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.header h1{
+    position: absolute;
+    top: -1.5rem;
+    left: 38%;
+    color: rgb(30, 30, 142);
+    box-shadow: -5px 5px 10px grey;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.header #restart{
+    position: absolute;
+    top: -1px;
+    right: 10px;
+    text-align: center;
+    height: 25px;
+    width: 90px;
+    background-color: rgb(215, 231, 245);
+    color:grey;
+    font-size: 12px;
+    border:none;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px grey;
+    cursor: pointer;
+}
+
+.header #restart:hover {
+    color:rgb(250, 25, 25);
+    background-color: whitesmoke;
+    border: 1px solid red;
+}
+ 
+.app{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(214, 220, 247, .3);
+    padding: 2rem;
+    width: 65%;
+    height:88vh; 
+    border-radius: 20px;
+    box-shadow: -20px 20px 20px grey;
+    cursor: pointer; 
+}
+.app .background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.app .board{
+    background-color: rgb(214, 220, 247);
+    margin-top: 20px; 
+    box-shadow: -20px 20px 20px grey;
+}
+ 
+.app .board .box{
+    color: rgb(78, 78, 139);
+    font-size: 100px;
+    font-weight: 700;
+ } 
+ 
+.app .display{
+    padding: 8px;
+}
+.app .display .display-player{
+    color:rgb(45, 36, 93);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+@media(max-width:1200px){
+    .header{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media(max-width:900px){
+    .header #restart{
+        margin-left: 100px;
+    }
+}
+
